@@ -1,0 +1,17 @@
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.AssemblyInfoInputs.cache
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.AssemblyInfo.cs
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.csproj.CoreCompileInputs.cache
+D:\Projects\CSHARP\RPG Engine\RPG Engine\bin\Debug\net10.0\RPG Engine.exe
+D:\Projects\CSHARP\RPG Engine\RPG Engine\bin\Debug\net10.0\RPG Engine.deps.json
+D:\Projects\CSHARP\RPG Engine\RPG Engine\bin\Debug\net10.0\RPG Engine.runtimeconfig.json
+D:\Projects\CSHARP\RPG Engine\RPG Engine\bin\Debug\net10.0\RPG Engine.dll
+D:\Projects\CSHARP\RPG Engine\RPG Engine\bin\Debug\net10.0\RPG Engine.pdb
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.dll
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\refint\RPG Engine.dll
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.pdb
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.genruntimeconfig.cache
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\ref\RPG Engine.dll
+D:\Projects\CSHARP\RPG Engine\RPG Engine\bin\Debug\net10.0\Newtonsoft.Json.dll
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.csproj.AssemblyReference.cache
+D:\Projects\CSHARP\RPG Engine\RPG Engine\obj\Debug\net10.0\RPG Engine.csproj.Up2Date

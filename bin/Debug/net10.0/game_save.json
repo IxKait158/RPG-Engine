@@ -1,0 +1,34 @@
+{
+  "IsWeaponEquiped": false,
+  "Weapon": null,
+  "Experience": 0,
+  "Items": {
+    "_items": [
+      {
+        "$type": "RPG_Engine.Items.Decorator.FireDamageDecorator, RPG Engine",
+        "Name": 7,
+        "Weapon": {
+          "$type": "RPG_Engine.Items.Weapons.Sword, RPG Engine",
+          "Name": 4
+        },
+        "Effect": 10
+      },
+      {
+        "$type": "RPG_Engine.Items.Weapons.Stick, RPG Engine",
+        "Name": 5
+      },
+      {
+        "$type": "RPG_Engine.Items.Potions.HealingPotion, RPG Engine",
+        "Name": 0,
+        "Effect": 30
+      },
+      {
+        "$type": "RPG_Engine.Items.Potions.ProtectionPotion, RPG Engine",
+        "Name": 1,
+        "Effect": 5
+      }
+    ]
+  },
+  "Name": "Darky",
+  "Health": 100
+}
