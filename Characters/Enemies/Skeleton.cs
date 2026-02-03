@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RPG_Engine.Characters.Enemies
+﻿namespace RPG_Engine.Characters.Enemies
 {
     internal class Skeleton : Enemy
     {

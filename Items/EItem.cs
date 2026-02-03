@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RPG_Engine.Items
+﻿namespace RPG_Engine.Items
 {
     enum Item
     {

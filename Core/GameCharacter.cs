@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RPG_Engine.Characters.Enemies;
-
-namespace RPG_Engine.Core
+﻿namespace RPG_Engine.Core
 {
     internal abstract class GameCharacter
     {

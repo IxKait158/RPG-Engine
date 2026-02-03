@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
-using RPG_Engine.Services;
+﻿using Newtonsoft.Json;
 
 namespace RPG_Engine.Items
 {

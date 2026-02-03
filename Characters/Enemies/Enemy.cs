@@ -1,9 +1,4 @@
 ﻿using RPG_Engine.Core;
-using RPG_Engine.Items.Weapons;
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Text;
 
 namespace RPG_Engine.Characters.Enemies
 {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RPG_Engine.Core;
+﻿using RPG_Engine.Core;
 using RPG_Engine.Items;
 using RPG_Engine.Items.Decorator;
 using RPG_Engine.Items.Potions;

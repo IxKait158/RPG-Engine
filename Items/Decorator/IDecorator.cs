@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RPG_Engine.Items.Weapons;
+﻿using RPG_Engine.Items.Weapons;
 
 namespace RPG_Engine.Items.Decorator
 {

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
-using RPG_Engine.Characters;
-using RPG_Engine.Characters.Enemies;
+﻿using RPG_Engine.Characters;
 using RPG_Engine.Core;
-using RPG_Engine.Items;
 using RPG_Engine.Items.Decorator;
 using RPG_Engine.Items.Potions;
 using RPG_Engine.Items.Weapons;
