@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RPG_Engine.Characters;
+﻿using RPG_Engine.Characters;
 using RPG_Engine.Characters.Enemies;
 
 namespace RPG_Engine.Core
@@ -15,14 +12,14 @@ namespace RPG_Engine.Core
             _hero = hero;
         }
 
-        public void HandleHeroDie(object sender, EventArgs e)
+        public void HandleHeroDie(object? sender, EventArgs e)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("GAME IS OVER!");
             Console.ResetColor();
         }
 
-        public void HandleEnemyDied(object sender, EventArgs e)
+        public void HandleEnemyDied(object? sender, EventArgs e)
         {
             if (sender is Enemy enemy)
             {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RPG_Engine.Characters.Enemies;
+﻿using RPG_Engine.Characters.Enemies;
 
 namespace RPG_Engine.Characters
 {

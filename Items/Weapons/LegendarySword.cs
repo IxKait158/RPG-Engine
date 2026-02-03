@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RPG_Engine.Items.Weapons
+﻿namespace RPG_Engine.Items.Weapons
 {
     internal class LegendarySword : IWeapon
     {

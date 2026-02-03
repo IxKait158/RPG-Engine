@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Text;
-using RPG_Engine.Characters;
-using RPG_Engine.Characters.Enemies;
+﻿using RPG_Engine.Characters;
 using RPG_Engine.Core;
-using RPG_Engine.Items;
 using RPG_Engine.Items.Decorator;
 using RPG_Engine.Items.Potions;
 using RPG_Engine.Items.Weapons;
@@ -25,6 +19,7 @@ namespace RPG_Engine
 
             var gm = new GameManager(hero);
             hero.OnDied += gm.HandleHeroDie;
+            enemy.OnDied += gm.HandleEnemyDied;
 
             bool gameIsOver = false;
             while (!gameIsOver)
@@ -38,12 +33,13 @@ namespace RPG_Engine
                 if (enemy.Health < 0)
                 {
                     enemy = EnemyFactory.CreateRandomEnemy();
+                    enemy.OnDied += gm.HandleEnemyDied;
                 }
                 Console.WriteLine(enemy);
 
                 PrintMenu(hero);
                 Console.Write("> ");
-                int choice = int.Parse(Console.ReadLine());
+                int choice = int.Parse(Console.ReadLine() ?? string.Empty);
 
                 if (choice == 1)
                 {
@@ -80,7 +76,7 @@ namespace RPG_Engine
             }
         }
 
-        static public void PrintMenu(Hero hero)
+        private static void PrintMenu(Hero hero)
         {
             Console.WriteLine($"Your turn! {hero}");
 
@@ -93,7 +89,7 @@ namespace RPG_Engine
             PrintInventory(hero);
         }
 
-        static public void PrintInventory(Hero hero)
+        private static void PrintInventory(Hero hero)
         {
             int i = 0;
             foreach (var item in hero.Items.GetAllItems())

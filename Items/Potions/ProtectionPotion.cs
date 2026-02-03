@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RPG_Engine.Items.Potions
+﻿namespace RPG_Engine.Items.Potions
 {
     internal class ProtectionPotion : IPotion
     {

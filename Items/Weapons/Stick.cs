@@ -1,9 +1,4 @@
-﻿using RPG_Engine.Items;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RPG_Engine.Items.Weapons
+﻿namespace RPG_Engine.Items.Weapons
 {
     internal class Stick : IWeapon
     {
