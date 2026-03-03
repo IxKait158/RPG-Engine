@@ -1,42 +1,23 @@
 # Console RPG Engine
-Навчальний проект консольного рушія для рольової гри (RPG), написаний на C#.
-Головна мета проекту — практична демонстрація принципів **OOP**, **SOLID**, **Generics** та **Design Patterns** у реальному застосунку.
 
-Гра підтримує покрокові бої, систему інвентарю, прокачування героя та збереження прогресу у JSON.
+An educational console-based Role-Playing Game (RPG) engine built with C#. The primary objective of this project is to provide a practical demonstration of core software engineering principles, including **OOP**, **SOLID**, **Generics**, and **Design Patterns** within a functional application.
 
----
+The engine features turn-based combat, a flexible generic inventory system, character progression, and JSON-based state persistence.
 
-## Функціонал
+## Tech Stack & Architecture
 
-* **Покрокова бойова система:** Класична механіка, де гравець та вороги ходять по черзі.
-* **Система збережень:** Автоматичне збереження та завантаження стану героя (здоров'я, рівень, інвентар) через JSON.
-* **Гнучкий інвентар:** Узагальнене сховище (`Inventory<T>`), що підтримує зброю, зілля та модифікатори.
-* **Генерація ворогів:** Фабрика монстрів створює різноманітних супротивників (Гобліни, Скелети, Дракони) з унікальними параметрами.
-* **Система ефектів:** Використання зілля лікування та захисту, а також модифікація зброї.
-* **Прокачування:** Нарахування досвіду (XP) за перемогу та підвищення рівня героя.
+Built with a strong emphasis on clean architecture, extensibility, and maintainable C# code.
 
----
+* **Language:** C#
+* **Platform:** .NET Core / .NET 5+
+* **Serialization:** `Newtonsoft.Json` (utilizing `TypeNameHandling` for correct polymorphic deserialization of inventory items and weapons).
 
-## Технологічний стек та Архітектура
+### Applied Design Patterns
 
-Проект побудовано з акцентом на чисту архітектуру та розширюваність.
+This project actively demonstrates the practical application of Gang of Four (GoF) design patterns:
 
-**Основні технології:**
-* **Мова:** C#
-* **Платформа:** .NET Core / .NET 5+
-* **Серіалізація:** `Newtonsoft.Json` (з обробкою поліморфізму через `TypeNameHandling`).
-
-### Реалізовані патерни проектування (Design Patterns)
-
-Проект демонструє володіння такими патернами:
-
-1.  **Factory Method (Фабричний метод):**
-    * Клас `EnemyFactory` інкапсулює логіку створення випадкових ворогів, ізолюючи її від основного циклу гри.
-2.  **Strategy (Стратегія):**
-    * Реалізовано через інтерфейс `IWeapon`. Різна зброя має власну логіку розрахунку урону (`CalculateDamage`), яку герой може змінювати "на льоту".
-3.  **Observer (Спостерігач):**
-    * Використання подій C# (`OnDied`) для сповіщення `GameManager` про смерть персонажів. Це дозволяє розділити логіку бою та логіку нарахування нагород.
-4.  **Decorator (Декоратор):**
-    * Дозволяє динамічно додавати ефекти до зброї (наприклад, вогняний урон) або персонажа, не змінюючи базові класи.
-5.  **Singleton (Схожа поведінка):**
-    * `GameManager` виступає центральним вузлом керування станом гри.
+1. **Factory Method:** The `EnemyFactory` class encapsulates the complex logic for instantiating random enemies, cleanly isolating object creation from the main game loop.
+2. **Strategy:** Implemented via the `IWeapon` interface. Different weapons encapsulate their own damage calculation algorithms (`CalculateDamage`), allowing the hero to swap combat behaviors dynamically at runtime.
+3. **Observer:** Utilizes native C# events (e.g., `OnDied`) to notify the `GameManager` of character deaths. This cleanly decouples the combat mechanics from the reward and XP distribution logic.
+4. **Decorator:** Enables the dynamic attachment of additional behaviors or effects to weapons (e.g., adding elemental fire damage) or characters without modifying their underlying base classes.
+5. **Singleton (State Management):** The `GameManager` acts as the centralized coordinator, managing the global state of the game and the execution of the core game loop.
